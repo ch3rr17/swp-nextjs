@@ -15,8 +15,11 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
+    "next-cloudinary": "^4.15.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "react-grid-gallery": "^1.0.0",
+    "typescript": "5.1.6",
+    "yet-another-react-lightbox": "^3.11.3"
   }
 }
