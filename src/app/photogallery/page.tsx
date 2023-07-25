@@ -1,6 +1,8 @@
 'use client'
 import Image from 'next/image'
 import styles from '/src/app/page.module.css'
+import Link from 'next/link';
+import type { Route } from 'next';
 import profilePic from './assets/img/cherr.jpg';
 import logo from './assets/img/swichep-logo-700-by-250.png';
 import moments from './assets/img/view-moments.jpg'
@@ -19,9 +21,10 @@ import jt from '../assets/img/prints/joshua-tree-sunrise.jpg';
 import lj2 from '../assets/img/prints/la-jolla-sunset-2.jpg';
 import falls from '../assets/img/prints/multnomah.jpg';
 
-// var laJolla = '../assets/img/prints/la-jolla-sunset-1.jpg';
-// console.log(laJolla)
-// console.log(solana);
+
+
+console.log(laJolla)
+console.log(solana);
 console.log(lj2);
 console.log(jt);
 console.log(bostonMarina);
@@ -94,7 +97,7 @@ const images = [
    },
  ];
 
-export default function Home() {
+export default function GalleryPage() {
     
   return (
    <main className={styles["gallery-container"]}>

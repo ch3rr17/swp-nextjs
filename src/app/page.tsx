@@ -1,11 +1,17 @@
+'use client'
 import Image from 'next/image'
 import styles from './page.module.css'
 import profilePic from './assets/img/cherr.jpg';
 import logo from './assets/img/swichep-logo-700-by-250.png';
 import moments from './assets/img/view-moments.jpg'
+import Link from 'next/link';
+import type { Route } from 'next';
+import { useRouter } from 'next/navigation'
 
 
 export default function Home() {
+
+    const router = useRouter()
     
   return (
     <main>
@@ -33,7 +39,7 @@ export default function Home() {
                 </div>
                 </div>
             </div>
-           
+            
         </div>
     </main>
 

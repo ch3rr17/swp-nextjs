@@ -2,6 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 import Image from 'next/image'
+import Link from 'next/link';
+import type { Route } from 'next';
 import logo from './assets/img/swichep-logo-700-by-250.png';
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,13 +27,17 @@ export default function RootLayout({
       <body className={inter.className}>
       <div className={styles.navigation}>
             <div className={styles.container}>
-                <div id="logo-container">
+                <div className={styles["logo-container"]}>
+                    <Link href="/">
                     <Image
                         src={logo}
                         alt="logo"
                         height={145}
                         sizes="(max-width: 100%)"
                     />
+                    </Link>
+                    <Link href="/photogallery">Sample Work</Link>
+                    <a href="https://www.swichepix.com/" target={'_blank'}>Print Gallery</a>
                 </div>
             </div>
         </div>
